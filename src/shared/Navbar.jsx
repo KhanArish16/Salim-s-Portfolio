@@ -8,9 +8,14 @@ const Navbar = () => {
         <img src={logo} alt="Logo" />
       </div>
       <div className="flex gap-10 text-lg">
-        <a href="#">Home</a>
-        <a href="#">Work</a>
-        <a href="#">About Me</a>
+        <a href="https://saalimkhan.netlify.app/">Home</a>
+        <a href="https://saalimkhan.netlify.app/">Work</a>
+        <a
+          href="#
+        https://saalimkhan.netlify.app/"
+        >
+          About Me
+        </a>
       </div>
     </div>
   );
