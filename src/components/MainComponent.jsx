@@ -3,13 +3,10 @@ import "../style/Global.css";
 import AvatarImg from "../assets/banner-avatar-img.png";
 import Dot from "../assets/Ellipse-1.png";
 import dwnLogo from "../assets/download-logo.png";
-import bgImg from "../assets/bg-svg-lines.png";
 
 const MainComponent = () => {
   return (
-    <div className="main-component">
-      <img src={bgImg} alt="bgimg" className="Bg-img" />
-
+    <div>
       <div className=" main-div">
         <div>
           <p className="main-heading">
