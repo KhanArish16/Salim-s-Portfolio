@@ -1,10 +1,11 @@
 import React from "react";
 import dwnLogo from "../assets/download-logo.png";
+import download from "../assets/MyUIUXResume.pdf";
 import "./Button.css";
 const Button = () => {
   return (
     <div>
-      <a href={dwnLogo} download={"resume"}>
+      <a href={download} download={"resume"}>
         <button className="btn-resume">
           <img
             src={dwnLogo}

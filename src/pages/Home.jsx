@@ -15,7 +15,7 @@ const Home = () => {
         {CardData.map((card) => {
           return (
             <ProjectCard
-              key={card.key}
+              key={Math.random()}
               imgUrl={card.imgUrl}
               name={card.name}
               projectType={card.projectType}
