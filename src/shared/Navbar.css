@@ -1,0 +1,15 @@
+.active {
+  background: linear-gradient(
+    to right,
+    rgba(127, 108, 238, 1),
+    rgba(186, 97, 203, 1),
+    rgba(191, 132, 202, 1),
+    rgba(223, 114, 244, 1)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  text-decoration: underline;
+  text-decoration-color: rgba(191, 132, 202, 1);
+}

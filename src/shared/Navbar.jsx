@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const activePage = window.location.pathname;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,10 +35,19 @@ const Navbar = () => {
           <img src={logo} alt="Logo" />
         </Link>
       </div>
-      <div className="flex gap-10 text-lg">
-        <Link to={"/"}>Home</Link>
-        <Link to={"/work"}>Work</Link>
-        <Link to={"/about-me"}>About Me</Link>
+      <div className="flex gap-10 text-lg font-semibold	">
+        <Link to={"/"} className={activePage === "/" ? "active" : ""}>
+          Home
+        </Link>
+        <Link to={"/work"} className={activePage === "/work" ? "active" : ""}>
+          Work
+        </Link>
+        <Link
+          to={"/about-me"}
+          className={activePage === "/about-me" ? "active" : ""}
+        >
+          About Me
+        </Link>
       </div>
     </header>
   );
