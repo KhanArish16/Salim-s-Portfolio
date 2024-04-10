@@ -6,12 +6,24 @@
 .Bg-img {
   height: 500px;
   width: 500px;
-  position: absolute;
+  position: fixed;
   z-index: -200;
   top: 50px;
   right: 0;
 }
-
+.BG-colour {
+  position: fixed;
+  height: 80vh;
+  width: 40vw;
+  left: 0;
+  z-index: -20;
+}
+.BG-colour-2 {
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  z-index: -20;
+}
 .section-projects {
   background-color: rgba(249, 249, 249, 1);
   padding: 20px 200px;
