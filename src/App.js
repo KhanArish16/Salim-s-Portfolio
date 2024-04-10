@@ -25,8 +25,8 @@ function App() {
   return (
     <div className="App">
       <div className="main-component">
-        <img src={colour1} className="BG-colour" />
-        <img src={colour2} className="BG-colour-2" />
+        <img src={colour1} className="BG-colour" alt="bgimg" />
+        <img src={colour2} className="BG-colour-2" alt="bgimg" />
         <img src={bgImg} alt="bgimg" className="Bg-img" />
         <RouterProvider router={router} />
       </div>

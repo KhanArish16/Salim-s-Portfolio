@@ -2,7 +2,7 @@ import React from "react";
 import "./Work.css";
 import Navbar from "../shared/Navbar";
 import Footer from "../shared/Footer";
-import img from "../assets/3D-img.svg";
+import AnimatedPic from "../assets/3D-img.svg";
 import Button from "../shared/Button";
 import ProjectCard from "../components/ProjectCard";
 import CardData from "../data/cardData";
@@ -13,7 +13,7 @@ const Work = () => {
       <Navbar />
       <div className="designFolio-div">
         <div>
-          <img src={img} alt="image" />
+          <img src={AnimatedPic} alt="Animated" />
         </div>
 
         <div className="designfolio-content-div">
