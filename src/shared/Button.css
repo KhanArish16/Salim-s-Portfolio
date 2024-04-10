@@ -1,0 +1,25 @@
+.btn-resume {
+  border-radius: 14px;
+  font-size: 18px;
+  padding: 8px 14px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid;
+  border-image: linear-gradient(
+    to right,
+    rgba(127, 108, 238, 1),
+    rgba(186, 97, 203, 1),
+    rgba(191, 132, 202, 1),
+    rgba(223, 114, 244, 1)
+  );
+  border-image-slice: 1;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.btn-resume:hover {
+  box-shadow: 0 3.4rem 6.8rem rgba(0, 0, 0, 0.06);
+  transform: translateY(-2.5px);
+}

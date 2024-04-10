@@ -1,8 +1,9 @@
 import React from "react";
-import "../style/Global.css";
+import "./MainComponent.css";
 import AvatarImg from "../assets/banner-avatar-img.png";
 import Dot from "../assets/Ellipse-1.png";
-import dwnLogo from "../assets/download-logo.png";
+// import dwnLogo from "../assets/download-logo.png";
+import Button from "../shared/Button";
 
 const MainComponent = () => {
   return (
@@ -33,14 +34,7 @@ const MainComponent = () => {
             </li>
           </ul>
 
-          <button className="btn-resume">
-            <img
-              src={dwnLogo}
-              alt="logo"
-              style={{ height: "20px", width: "20px", marginRight: "10px" }}
-            />
-            Download Resume
-          </button>
+          <Button />
         </div>
 
         <div>

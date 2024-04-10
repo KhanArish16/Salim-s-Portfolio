@@ -1,0 +1,48 @@
+.projectCard-div {
+  margin-top: 50px;
+  height: 260px;
+  width: 336px;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #fff;
+  background-color: black;
+}
+.projectCard-img {
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+}
+.projectCard-content {
+  padding: 10px 22px;
+  font-size: 13px;
+}
+.projectCard-content > .content-child {
+  margin-bottom: 3px;
+}
+.projectCard-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.projectCard-icons {
+  height: 16px;
+  width: 16px;
+  color: #fff;
+}
+
+.see-work {
+  display: flex;
+  justify-content: end;
+}
+.see-work p {
+  text-decoration: underline;
+  font-weight: 600;
+}
