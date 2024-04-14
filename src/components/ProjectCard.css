@@ -57,9 +57,8 @@
     width: 436px;
   }
 }
-@media (width <= 400px) {
+@media (width <= 410px) {
   .projectCard-div {
     width: 300px;
-    flex-direction: row;
   }
 }
