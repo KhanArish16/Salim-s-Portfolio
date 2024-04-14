@@ -1,10 +1,10 @@
 import React from "react";
-import "./Home.css";
 import Navbar from "../shared/Navbar";
 import MainComponent from "../components/MainComponent";
 import ProjectCard from "../components/ProjectCard";
 import Footer from "../shared/Footer";
 import CardData from "../data/cardData";
+import "./Home.css";
 
 const Home = () => {
   return (
