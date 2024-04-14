@@ -24,9 +24,3 @@
   height: 100vh;
   z-index: -20;
 }
-.section-projects {
-  background-color: rgba(249, 249, 249, 1);
-  padding: 20px 200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}

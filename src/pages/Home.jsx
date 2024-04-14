@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/Global.css";
+import "./Home.css";
 import Navbar from "../shared/Navbar";
 import MainComponent from "../components/MainComponent";
 import ProjectCard from "../components/ProjectCard";
