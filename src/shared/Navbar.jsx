@@ -40,7 +40,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link to={"/work"} className={activePage === "/work" ? "active" : ""}>
-          Work
+          My Work
         </Link>
         <Link
           to={"/about-me"}

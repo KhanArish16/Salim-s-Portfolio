@@ -11,7 +11,7 @@ const ProjectCard = (props) => {
 
         <div className="projectCard-content">
           <div className="content-child">
-            <h5 style={{ fontSize: "22px" }}>{props.name}</h5>
+            <h5 style={{ fontSize: "20px" }}>{props.name}</h5>
           </div>
 
           <div className="projectCard-features content-child">

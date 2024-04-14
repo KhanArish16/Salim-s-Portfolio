@@ -1,0 +1,17 @@
+.section-projects {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (width <= 1120px) {
+  .section-projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (width <= 750px) {
+  .section-projects {
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+}

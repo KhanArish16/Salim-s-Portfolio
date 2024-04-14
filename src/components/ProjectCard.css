@@ -1,5 +1,5 @@
 .projectCard-div {
-  margin-top: 50px;
+  margin: 20px;
   height: 260px;
   width: 336px;
   overflow: hidden;
@@ -44,5 +44,22 @@
 }
 .see-work p {
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.see-work p:hover {
+  color: rgba(186, 97, 203, 1);
+}
+
+/* ///////////////// */
+@media (500px <= width <= 750px) {
+  .projectCard-div {
+    width: 436px;
+  }
+}
+@media (width <= 400px) {
+  .projectCard-div {
+    width: 300px;
+    flex-direction: row;
+  }
 }
