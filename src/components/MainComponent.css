@@ -3,7 +3,11 @@
   display: flex;
   justify-content: space-between;
 }
-
+.content-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .main-heading {
   font-size: 72px;
   line-height: 1;

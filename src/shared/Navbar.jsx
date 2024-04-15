@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { InlineIcon } from "@iconify/react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   const activePage = window.location.pathname;
 
@@ -22,20 +24,37 @@ const Navbar = () => {
     };
   }, []);
 
+  const openMobileNav = () => {
+    setIsMobileNavOpen(true);
+  };
+
+  const closeMobileNav = () => {
+    setIsMobileNavOpen(false);
+  };
+
+  const handleButtonClick = (e) => {
+    e.stopPropagation();
+    if (isMobileNavOpen) {
+      closeMobileNav();
+    } else {
+      openMobileNav();
+    }
+  };
+
   return (
     <header
-      className={`h-20 w-ful flex  items-center justify-between pt-4 pb-4 pl-20 pr-20 border-b-2 bg-white  ${
-        isScrolled
-          ? "bg-white bg-opacity-30 transition-all duration-1000 backdrop-filter backdrop-blur-md py-6 top-0 fixed w-full z-10"
-          : "bg-blue py-6 transition-all duration-1000"
-      } `}
+      className={`h-20 w-full flex items-center justify-between pt-4 pb-4 pl-4 pr-4 border-b-2 bg-white  `}
     >
       <div className="h-12 w-12">
         <Link to={"/"}>
           <img src={logo} alt="Logo" />
         </Link>
       </div>
-      <div className="flex gap-10 text-lg font-semibold	">
+      <div
+        className={`nav-links md:flex gap-10 text-lg font-semibold ${
+          isMobileNavOpen ? "show" : ""
+        }`}
+      >
         <Link to={"/"} className={activePage === "/" ? "active" : ""}>
           Home
         </Link>
@@ -49,6 +68,18 @@ const Navbar = () => {
           About Me
         </Link>
       </div>
+
+      {isMobileNavOpen && (
+        <div className="overlay" onClick={closeMobileNav}></div>
+      )}
+
+      <button className="btn-mobile-nav md:hidden" onClick={handleButtonClick}>
+        <InlineIcon
+          icon={isMobileNavOpen ? "akar-icons:cross" : "quill:hamburger"}
+          className="icon-mobile-nav"
+          name="menu-outline"
+        />
+      </button>
     </header>
   );
 };
