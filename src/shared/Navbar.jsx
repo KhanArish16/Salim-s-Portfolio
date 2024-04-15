@@ -5,24 +5,24 @@ import "./Navbar.css";
 import { InlineIcon } from "@iconify/react";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   const activePage = window.location.pathname;
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset;
-      const scrollThreshold = 260;
-      setIsScrolled(scrollTop > scrollThreshold);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = window.pageYOffset;
+  //     const scrollThreshold = 260;
+  //     setIsScrolled(scrollTop > scrollThreshold);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   const openMobileNav = () => {
     setIsMobileNavOpen(true);
