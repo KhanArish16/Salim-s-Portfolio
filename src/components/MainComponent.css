@@ -1,8 +1,7 @@
 .main-div {
-  padding: 65px 88px;
+  margin: 65px 88px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .main-heading {
@@ -44,4 +43,28 @@
 .avatar-img {
   height: 438px;
   width: 438px;
+}
+/*  */
+
+@media (width <= 1200px) {
+  .avatar-img {
+    height: 350px;
+    width: 350px;
+    margin-left: 20px;
+  }
+}
+@media (width <= 850px) {
+  .avatar-img {
+    display: none;
+  }
+}
+@media (width <= 650px) {
+  .main-div {
+    margin: 50px;
+  }
+  .subHeading {
+    font-size: 18px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
