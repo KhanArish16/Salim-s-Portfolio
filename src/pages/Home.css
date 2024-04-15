@@ -1,11 +1,18 @@
 .section-projects {
-  justify-content: center;
+  margin: 20px 200px;
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (width <= 1520px) {
+  .section-projects {
+    justify-content: center;
+  }
+}
 @media (width <= 1120px) {
   .section-projects {
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
   }
 }

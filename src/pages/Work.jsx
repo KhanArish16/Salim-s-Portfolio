@@ -48,7 +48,7 @@ const Work = () => {
         </div>
       </div>
 
-      <section className="section-projects">
+      <section className="section-project">
         {CardData.map((card) => {
           return (
             <ProjectCard

@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: flex-start;
   color: #fff;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 .projectCard-img {
   height: 150px;
