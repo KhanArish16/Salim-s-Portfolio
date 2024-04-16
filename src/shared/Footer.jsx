@@ -2,7 +2,6 @@ import React from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import "./Footer.css";
-// import { InlineIcon } from "@iconify/react/dist/iconify.js";
 
 const Footer = () => {
   return (
@@ -21,28 +20,22 @@ const Footer = () => {
         </div>
 
         <div className="footer-contact-div">
-          <div className="flex gap-10 text-lg">
+          <div className="flex gap-10 text-lg ">
             <Link to={"/"}>Home</Link>
             <Link to={"/work"}>Work</Link>
             <Link to={"/about-me"}>About Me</Link>
           </div>
 
           <div className="contact-details flex mt-6">
-            <div className="flex items-center mr-5">
-              <span className="flex items-center mr-3">
-                {/* <InlineIcon icon={"ic:baseline-phone"} /> */}
-                Phone-
-              </span>
+            <div className="flex items-center ">
+              <span className="flex items-center mr-3">Phone-</span>
               <p>+91 7385480618</p>
             </div>
 
-            <span>|</span>
+            <span className="snap-contact mr-5 ml-5">|</span>
 
-            <div className="flex items-center ml-5">
-              <span className="flex items-center mr-3">
-                {/* <InlineIcon icon={"Vector"} /> */}
-                Email-
-              </span>
+            <div className="flex items-center">
+              <span className="flex items-center mr-3">Email-</span>
               <p>saalimkhan02@gmail.com</p>
             </div>
           </div>

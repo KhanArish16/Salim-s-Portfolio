@@ -21,3 +21,16 @@
   width: 100%;
   text-align: center;
 }
+
+@media (width<=950px) {
+  .footer-container-div {
+    flex-direction: column;
+  }
+  .footer-content-div {
+    margin-bottom: 40px;
+  }
+  .copyRight {
+    text-align: start;
+    margin-left: 40px;
+  }
+}
