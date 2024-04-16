@@ -17,12 +17,18 @@
   margin-bottom: 16px;
 }
 
+.project-div {
+  background-color: rgba(220, 220, 220, 0.248);
+  padding: 20px;
+  text-align: center;
+}
 .section-project {
   background-color: rgba(255, 0, 0, 0);
   padding: 20px 200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 @media (width <= 1520px) {
   .section-project {
     justify-content: center;

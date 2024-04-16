@@ -48,19 +48,22 @@ const Work = () => {
         </div>
       </div>
 
-      <section className="section-project">
-        {CardData.map((card) => {
-          return (
-            <ProjectCard
-              key={Math.random()}
-              imgUrl={card.imgUrl}
-              name={card.name}
-              projectType={card.projectType}
-              link={card.link}
-            />
-          );
-        })}
-      </section>
+      <div className="project-div">
+        <h1 style={{ fontSize: "30px", fontWeight: "600" }}>My Projects</h1>
+        <section className="section-project">
+          {CardData.map((card) => {
+            return (
+              <ProjectCard
+                key={Math.random()}
+                imgUrl={card.imgUrl}
+                name={card.name}
+                projectType={card.projectType}
+                link={card.link}
+              />
+            );
+          })}
+        </section>
+      </div>
 
       <Footer />
     </div>

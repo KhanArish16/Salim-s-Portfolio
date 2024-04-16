@@ -11,19 +11,23 @@ const Home = () => {
     <div>
       <Navbar />
       <MainComponent />
-      <section className="section-projects">
-        {CardData.map((card) => {
-          return (
-            <ProjectCard
-              key={Math.random()}
-              imgUrl={card.imgUrl}
-              name={card.name}
-              projectType={card.projectType}
-              link={card.link}
-            />
-          );
-        })}
-      </section>
+
+      <div className="My-project-div">
+        <h1 style={{ fontSize: "30px", fontWeight: "600" }}>My Projects</h1>
+        <section className="section-projects">
+          {CardData.map((card) => {
+            return (
+              <ProjectCard
+                key={Math.random()}
+                imgUrl={card.imgUrl}
+                name={card.name}
+                projectType={card.projectType}
+                link={card.link}
+              />
+            );
+          })}
+        </section>
+      </div>
 
       <Footer />
     </div>

@@ -1,3 +1,9 @@
+.My-project-div {
+  background-color: rgba(220, 220, 220, 0.248);
+  padding: 20px;
+  text-align: center;
+}
+
 .section-projects {
   margin: 20px 200px;
   display: grid;
