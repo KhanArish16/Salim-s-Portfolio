@@ -12,7 +12,7 @@ const Work = () => {
     <div>
       <Navbar />
       <div className="designFolio-div">
-        <div>
+        <div className="img-div">
           <img src={AnimatedPic} alt="Animated" />
         </div>
 
@@ -27,7 +27,7 @@ const Work = () => {
           </div>
 
           <div className="contact-details flex mt-6">
-            <div className="flex items-center mr-5">
+            <div className="flex items-center ">
               <span className="flex items-center mr-3">
                 {/* <InlineIcon icon={"ic:baseline-phone"} /> */}
                 Phone-
@@ -35,10 +35,10 @@ const Work = () => {
               <p>+91 7385480618</p>
             </div>
 
-            <span>|</span>
+            <span className="ml-5 mr-5">|</span>
 
-            <div className="flex items-center ml-5">
-              <span className="flex items-center mr-3">
+            <div className="flex items-center  ">
+              <span className="flex items-center mr-3 ">
                 {/* <InlineIcon icon={"Vector"} /> */}
                 Email-
               </span>

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px;
+  margin: 20px;
   text-align: center;
 }
 .designfolio-content-div {
@@ -22,4 +22,46 @@
   padding: 20px 200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+@media (width <= 1520px) {
+  .section-project {
+    justify-content: center;
+  }
+}
+@media (width <= 1120px) {
+  .section-project {
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (width <= 750px) {
+  .designFolio-div {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .img-div {
+    display: none;
+  }
+
+  .main-heading {
+    font-size: 60px;
+  }
+  .section-project {
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+  .contact-details {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+@media (width<= 400px) {
+  .main-heading {
+    font-size: 50px;
+  }
 }
