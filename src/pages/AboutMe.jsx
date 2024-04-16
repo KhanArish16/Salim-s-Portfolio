@@ -4,7 +4,7 @@ import Footer from "../shared/Footer";
 import "./AboutMe.css";
 import AnimatedPic from "../assets/3D-img.svg";
 import Button from "../shared/Button";
-import Info from "../data/Info";
+
 import { InlineIcon } from "@iconify/react/dist/iconify.js";
 const AboutMe = () => {
   return (
