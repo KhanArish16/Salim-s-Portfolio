@@ -35,7 +35,7 @@ const AboutMe = () => {
                 <p>+91 7385480618</p>
               </div>
 
-              <span className="ml-5 mr-5">|</span>
+              <span className="contact-details-span ml-5 mr-5">|</span>
 
               <div className="flex items-center  ">
                 <span className="flex items-center mr-3 ">Email-</span>
@@ -64,7 +64,10 @@ const AboutMe = () => {
           <div className="infoContainer">
             <div className="infoHeading-div">
               <div className="icon-div">
-                <InlineIcon icon="cil:education" className="info-icons" />
+                <InlineIcon
+                  icon="material-symbols:work-outline"
+                  className="info-icons"
+                />
               </div>
               <p>Experience</p>
             </div>
@@ -76,10 +79,7 @@ const AboutMe = () => {
 
           <div className="infoContainer">
             <div className="infoHeading-div">
-              <InlineIcon
-                icon="material-symbols_work-outline"
-                className="info-icons"
-              />
+              <InlineIcon icon="ph:certificate" className="info-icons" />
               <p>Certifications</p>
             </div>
             <div className="info-contentDiv">
@@ -90,7 +90,10 @@ const AboutMe = () => {
 
           <div className="infoContainer">
             <div className="infoHeading-div">
-              <InlineIcon icon="cil:education" className="info-icons" />
+              <InlineIcon
+                icon="material-symbols:brush"
+                className="info-icons"
+              />
               <p>Design Skills</p>
             </div>
             <div className="info-contentDiv">
@@ -107,7 +110,7 @@ const AboutMe = () => {
 
           <div className="infoContainer">
             <div className="infoHeading-div">
-              <InlineIcon icon="cil:education" className="info-icons" />
+              <InlineIcon icon="bx:pen" className="info-icons" />
               <p>Tools & Technologies</p>
             </div>
             <div className="info-contentDiv">
@@ -119,7 +122,10 @@ const AboutMe = () => {
 
           <div className="infoContainer">
             <div className="infoHeading-div">
-              <InlineIcon icon="cil:education" className="info-icons" />
+              <InlineIcon
+                icon="icon-park-outline:muscle"
+                className="info-icons"
+              />
               <p>Strengths</p>
             </div>
             <div className="info-contentDiv">

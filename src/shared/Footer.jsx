@@ -32,7 +32,9 @@ const Footer = () => {
               <p>+91 7385480618</p>
             </div>
 
-            <span className="snap-contact mr-5 ml-5">|</span>
+            <span className="contact-details-span snap-contact mr-5 ml-5">
+              |
+            </span>
 
             <div className="flex items-center">
               <span className="flex items-center mr-3">Email-</span>
