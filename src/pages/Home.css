@@ -5,7 +5,7 @@
 }
 
 .section-projects {
-  margin: 20px 200px;
+  padding: 20px 200px;
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
@@ -24,7 +24,13 @@
 }
 @media (width <= 750px) {
   .section-projects {
+    display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
+  }
+}
+@media (width <= 450px) {
+  .section-projects {
+    padding: 20px 0;
   }
 }

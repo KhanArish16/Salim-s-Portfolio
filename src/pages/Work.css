@@ -61,8 +61,14 @@
     align-items: start;
   }
 
-  span {
+  .contact-details-span {
     display: none;
+  }
+}
+
+@media (width <= 450px) {
+  .section-project {
+    padding: 20px 0;
   }
 }
 

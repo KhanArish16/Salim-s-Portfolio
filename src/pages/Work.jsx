@@ -35,7 +35,7 @@ const Work = () => {
               <p>+91 7385480618</p>
             </div>
 
-            <span className="ml-5 mr-5">|</span>
+            <span className="contact-details-span ml-5 mr-5">|</span>
 
             <div className="flex items-center  ">
               <span className="flex items-center mr-3 ">
